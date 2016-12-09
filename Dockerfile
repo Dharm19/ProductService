@@ -6,7 +6,10 @@ WORKDIR /app
 
 RUN ["dotnet", "restore"]
 
-RUN ["dotnet", "build"]
+RUN ["dotnet", "build", "./src"]
+RUN ["dotnet", "build", "./Tests"]
+
+RUN ["dotnet", "test", "./Tests"]
 
 EXPOSE 5000/tcp
 
