@@ -1,5 +1,7 @@
 FROM microsoft/dotnet:latest
 
+MAINTAINER Dharmendra Singh
+
 COPY . /app
 
 WORKDIR /app
@@ -13,4 +15,4 @@ RUN ["dotnet", "test", "./Tests"]
 
 EXPOSE 5000/tcp
 
-CMD ["dotnet", "run", "--server.urls", "http://*:5000"]
+CMD ["dotnet", "run","-p","./src/","--server.urls", "http://*:5000"]
