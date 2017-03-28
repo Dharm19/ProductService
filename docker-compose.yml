@@ -1,0 +1,9 @@
+dockerized-eureka-server:
+  image: 'dharm19/docker-eureka:1.0'
+  ports:
+    - '8761:8761'
+product-service:
+  image: 'dharm19/productservice:v10'
+  ports: 
+  - '5000:5000'
+  

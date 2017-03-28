@@ -9,7 +9,6 @@ WORKDIR /app
 RUN ["dotnet", "restore"]
 
 RUN ["dotnet", "build", "./src"]
-RUN ["dotnet", "build", "./Tests"]
 
 RUN ["dotnet", "test", "./Tests"]
 
