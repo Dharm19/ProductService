@@ -10,7 +10,6 @@ RUN ["dotnet", "restore"]
 
 RUN ["dotnet", "build", "./src"]
 
-RUN ["dotnet", "test", "./Tests"]
 
 EXPOSE 5000/tcp
 

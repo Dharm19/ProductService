@@ -25,8 +25,8 @@ namespace ProductService.Controllers
             
             ProductModel prod = new ProductModel();
             prod.ProductId = 100;
-            prod.ProductName = "iPhone 8";
-            prod.ProductDesc = "Apple iphone 6s Black 60GB";
+            prod.ProductName = "Andriod";
+            prod.ProductDesc = "Moto";
             prod.ProductPrice = "$700";
 
             return prod;
